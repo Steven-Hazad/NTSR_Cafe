@@ -8,6 +8,6 @@ namespace NTSR.Domain.Enums;
 
 public enum OrderType
 {
-    DineIn,
+    DineIn, 
     Takeaway
 }
