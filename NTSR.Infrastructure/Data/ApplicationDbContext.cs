@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace NTSR.Infrastructure.Data;
-    
+      //sTREAK TD I TIRED mate 
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
