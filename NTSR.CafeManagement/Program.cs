@@ -9,7 +9,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection"),
         b => b.MigrationsAssembly("NTSR.Infrastructure")
     ));
-
+builder.Services.AddScoped<NTSR.Domain.Interfaces.IUnitOfWork, NTSR.Infrastructure.Repositories.UnitOfWork>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 
