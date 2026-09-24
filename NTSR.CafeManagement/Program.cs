@@ -2,8 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using NTSR.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Register DbContext with the MigrationsAssembly option added
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        b => b.MigrationsAssembly("NTSR.Infrastructure")
+    ));
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 
