@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NTSR.Domain\NTSR.Domain.csproj" />
     <ProjectReference Include="..\NTSR.Infrastructure\NTSR.Infrastructure.csproj" />
+    <ProjectReference Include="..\NTSR.Services\NTSR.Services.csproj" />
   </ItemGroup>
 
 </Project>
